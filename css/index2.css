@@ -1,0 +1,156 @@
+body {
+    background-color: #f3f5f7;
+}
+header {
+    width: 1300px;
+    height: 100px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+}
+header {
+    padding-top: 30px;
+}
+header .logo{
+    width: 195px;
+    height: 43px;
+    display: inline-block;
+    float: left;
+}
+header .logo a {
+    background-image: url(../images/logo.png);
+    width: 195px;
+    height: 43px;
+    display: inline-block;
+    text-indent: -990px;
+    overflow: hidden;
+}
+header nav {
+    display: inline-block;
+    margin-left: 50px;
+    float: left;
+}
+header nav ul li {
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    color: #050505;
+    /*border: 1px solid red;*/
+}
+nav li a {
+    height: 42px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 10px;
+}
+header nav ul li a:hover {
+    /*color: #00a4ff;*/
+    color: #050505;
+    border-bottom: 2px solid #00a4ff;
+}
+/*search*/
+.search {
+    /*position: absolute;*/
+    margin-left: 50px;
+    float: left;
+}
+header .search input {
+    width: 330px;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #00a4ff;
+    padding: 10px;
+}
+header .search button {
+    width: 50px;
+    height: 40px;
+    /*background-color: #00a4ff;*/
+    border: 0;
+    outline: none;
+    float: right;
+    background: url(../images/fa-search.png) no-repeat;
+}
+/*personal*/
+.personal {
+    float: right;
+}
+.personal dl dt,.personal dl dd {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin: 0 12px;
+    size: 14px;
+}
+.personal dl dd img {
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all 0.6s;
+    /*position: relative;*/
+}
+.personal dd .zhuan:hover {
+    transform: rotate(-360deg);
+}
+/*banner*/
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .inner {
+    position: relative;
+}
+.banner .subnav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 420px;
+}
+.banner .subnav ul {
+    background: rgba(0,0,0,0.3);
+    width: 190px;
+    height: 420px;
+    padding-top: 13px;
+}
+.banner .subnav li {
+    height: 40px;
+    padding: 15px;
+    padding-left: 20px;
+}
+.banner .subnav li a{
+    font-size: 14px;
+    color: #fff;
+}
+.banner .subnav li span {
+    float: right;
+    padding-right: 5px;
+}
+.banner .subnav a:hover {
+    color: #02a4ec;
+}
+/*circle*/
+.circle {
+    width: 180px;
+    height: 20px;
+    /*background-color: red;*/
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+}
+.circle i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.6);
+    margin: 0 7px;
+    cursor: pointer;
+}
+.circle .current {
+    /*width: 20px;*/
+}
+.circle  i:hover{
+    width: 20px;
+    background-color: #fff;
+    transition: width 0.6s ease 0s, height 0.3s ease-in 1s;
+    /*增加过渡*/
+}
